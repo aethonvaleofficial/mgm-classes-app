@@ -1,0 +1,129 @@
+/* PortalPlaceholder.css */
+.portal {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(244, 243, 236, 0.3));
+  padding: 3rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portal-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portal-card {
+  width: 100%;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px) saturate(120%);
+  -webkit-backdrop-filter: blur(16px) saturate(120%);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 24px;
+  padding: 2.5rem 2rem;
+  box-shadow: 
+    0 10px 30px -10px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    0 1px 3px rgba(0, 0, 0, 0.02);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+/* 3D soft effect on hover */
+.portal-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 
+    0 15px 35px -8px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.portal-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.05));
+  animation: pulseIcon 4s ease-in-out infinite;
+}
+
+@keyframes pulseIcon {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.portal-card h2 {
+  color: var(--text-h);
+  font-size: 1.8rem;
+  margin: 0 0 0.75rem 0;
+  font-weight: 600;
+}
+
+.portal-subtitle {
+  color: var(--text);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0 0 1.25rem 0;
+}
+
+.portal-badge-container {
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.portal-action {
+  margin-bottom: 1.25rem;
+}
+
+.portal-action .btn {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.portal-action .btn:active {
+  transform: scale(0.98);
+}
+
+.portal-note {
+  font-size: 0.8rem;
+  color: var(--text);
+  opacity: 0.8;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.portal-container .dashboard-preview {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Dark Mode support */
+@media (prefers-color-scheme: dark) {
+  .portal-card {
+    background: rgba(30, 31, 38, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 
+      0 10px 30px -10px rgba(0, 0, 0, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+  .portal-card:hover {
+    box-shadow: 
+      0 15px 35px -8px rgba(0, 0, 0, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  }
+}
+
+@media (max-width: 480px) {
+  .portal-card {
+    padding: 2rem 1.5rem;
+  }
+}

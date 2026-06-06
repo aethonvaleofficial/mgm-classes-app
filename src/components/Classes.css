@@ -1,0 +1,57 @@
+/* Classes.css */
+.classes {
+  background: var(--bg);
+  padding: 2rem 1rem;
+}
+.classes-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.classes-container h2 {
+  color: var(--text-h);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.section-subtitle {
+  text-align: center;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+.classes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+.class-card {
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s;
+}
+.class-card:hover {
+  transform: translateY(-4px);
+}
+.class-title {
+  font-size: 1.2rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+.class-description {
+  font-size: 0.95rem;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+.class-subjects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.subject-tag {
+  background: var(--accent-bg);
+  color: var(--accent);
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+}

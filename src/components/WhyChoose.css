@@ -1,0 +1,46 @@
+/* WhyChoose.css */
+.why-choose {
+  background: var(--bg);
+  padding: 2rem 1rem;
+}
+.why-choose-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.why-choose-container h2 {
+  color: var(--text-h);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.feature-card {
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s;
+}
+.feature-card:hover {
+  transform: translateY(-4px);
+}
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+.feature-title {
+  font-size: 1.1rem;
+  color: var(--text-h);
+  margin-bottom: 0.5rem;
+}
+.feature-description {
+  font-size: 0.9rem;
+  color: var(--text);
+}

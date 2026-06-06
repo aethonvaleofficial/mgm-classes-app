@@ -1,0 +1,43 @@
+/* StudentDashboardPreview.css */
+.dashboard-preview {
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+.dashboard-preview h3 {
+  color: var(--text-h);
+  margin-bottom: 0.5rem;
+}
+.preview-note {
+  font-size: 0.85rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+.preview-card {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  padding: 0.75rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s;
+}
+.preview-card:hover {
+  transform: translateY(-3px);
+}
+.preview-icon {
+  font-size: 1.8rem;
+  margin-bottom: 0.25rem;
+}
+.preview-label {
+  font-size: 0.9rem;
+  color: var(--text);
+}

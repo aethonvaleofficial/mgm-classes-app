@@ -1,0 +1,157 @@
+/* Hero.css */
+.hero {
+  background: linear-gradient(135deg, #fbfaf8 0%, #f0ede8 100%);
+  padding: 1.5rem 1rem 2rem 1rem;
+  box-sizing: border-box;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.logo-badge {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.25rem;
+}
+
+.logo-badge img {
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+}
+
+.hero-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-h);
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.hero-subtitle {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.4;
+  margin: 0;
+  max-width: 320px;
+}
+
+/* Learning space visual container */
+.learning-space {
+  position: relative;
+  width: 100%;
+  max-width: 310px;
+  height: 160px;
+  margin: 0.75rem auto;
+  perspective: 800px;
+}
+
+.dashboard-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 18px;
+  padding: 0.75rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  animation: floatCard 6s ease-in-out infinite;
+}
+
+.dashboard-card h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.mini-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+}
+
+.mini-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+}
+
+.mini-card .label {
+  color: var(--text-h);
+}
+
+/* Floating study objects - constrained inside learning-space */
+.floating-object {
+  position: absolute;
+  font-size: 1.25rem;
+  z-index: 10;
+  pointer-events: none;
+  animation: floatEmoji 5s ease-in-out infinite;
+}
+
+.floating-object.book { top: 15%; left: 5%; animation-delay: 0s; }
+.floating-object.pencil { top: 65%; left: 8%; animation-delay: 1.5s; }
+.floating-object.notebook { top: 75%; right: 10%; animation-delay: 0.7s; }
+.floating-object.star { top: 10%; right: 6%; animation-delay: 2.2s; }
+.floating-object.trophy { display: none; } /* hide to reduce clutter */
+
+@keyframes floatCard {
+  0%, 100% { transform: translateY(0) rotateY(0deg); }
+  50% { transform: translateY(-4px) rotateY(2deg); }
+}
+
+@keyframes floatEmoji {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-6px) scale(1.05); }
+}
+
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: 100%;
+  max-width: 310px;
+  margin-top: 0.5rem;
+}
+
+.hero-actions .btn {
+  width: 100%;
+  min-height: 48px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+}
+
+.hero-image {
+  display: none !important; /* Hide image completely in mobile app layout */
+}
