@@ -1,3 +1,4 @@
+import StudyJourney from './components/StudyJourney'
 import React, { useState, useEffect } from 'react'
 import Hero from './components/Hero'
 import About from './components/About'
