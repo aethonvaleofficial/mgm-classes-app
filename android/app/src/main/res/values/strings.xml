@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">MGM Classes</string>
+    <string name="title_activity_main">MGM Classes</string>
+    <string name="package_name">com.aethonvale.mgmclasses</string>
+    <string name="custom_url_scheme">com.aethonvale.mgmclasses</string>
+</resources>
