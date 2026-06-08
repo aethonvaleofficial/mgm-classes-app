@@ -9,12 +9,12 @@
   text-align: center;
 }
 .dashboard-preview h3 {
-  color: var(--text-h);
+  color: #1f2937;
   margin-bottom: 0.5rem;
 }
 .preview-note {
   font-size: 0.85rem;
-  color: var(--text);
+  color: #4b5563;
   margin-bottom: 1rem;
 }
 .preview-grid {

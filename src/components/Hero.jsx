@@ -19,12 +19,15 @@ function Hero() {
         </div>
 
         {/* 2. Title */}
-        <h2 className="hero-title">MGM Classes Bundi</h2>
+        <h2 className="hero-title">MGM Classes</h2>
 
         {/* 3. Subtitle */}
         <p className="hero-subtitle">
-          Quality coaching with personal attention for school students in Bundi.
+          Nursery to Class 10 · Class 11–12 English & Arts Stream Support
         </p>
+
+        {/* Trust line */}
+        <p className="hero-trust">Soft, focused learning support for students in Bundi.</p>
 
         {/* 4. Study Dashboard preview card */}
         <div className="learning-space">
@@ -49,10 +52,13 @@ function Hero() {
         {/* 5 & 6. Large action buttons */}
         <div className="hero-actions">
           <button className="btn btn-primary" onClick={handleScrollToAdmission}>
-            Apply Now
+            Admission Enquiry
           </button>
-          <button className="btn btn-secondary" onClick={() => window.open('https://wa.me/919024202010', '_blank')}>
-            WhatsApp Us
+          <button className="btn btn-secondary" onClick={() => {
+            const el = document.getElementById('portal')
+            if (el) el.scrollIntoView({ behavior: 'smooth' })
+          }}>
+            Open Portal
           </button>
         </div>
 

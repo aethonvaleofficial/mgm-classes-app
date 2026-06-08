@@ -49,6 +49,12 @@
   max-width: 320px;
 }
 
+.hero-trust {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 /* Learning space visual container */
 .learning-space {
   position: relative;
@@ -60,10 +66,8 @@
 }
 
 .dashboard-card {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: #ffffff;
+  border: 1px solid var(--border);
   border-radius: 18px;
   padding: 0.75rem;
   box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
@@ -75,11 +79,10 @@
 
 .dashboard-card h4 {
   margin: 0 0 0.5rem 0;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--accent);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-h);
+  text-transform: none;
 }
 
 .mini-cards {
@@ -90,7 +93,7 @@
 }
 
 .mini-card {
-  background: rgba(255, 255, 255, 0.9);
+  background: #fff;
   border-radius: 10px;
   padding: 0.3rem 0.5rem;
   font-size: 0.7rem;
@@ -102,7 +105,7 @@
 }
 
 .mini-card .label {
-  color: var(--text-h);
+  color: var(--text);
 }
 
 /* Floating study objects - constrained inside learning-space */
@@ -152,6 +155,42 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
 }
 
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: #6931c8;
+}
+.btn-secondary {
+  background: #fff;
+  color: var(--text-h);
+  border: 1px solid var(--border);
+}
+.btn-secondary:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
 .hero-image {
   display: none !important; /* Hide image completely in mobile app layout */
+}
+/* FORCE READABILITY FIX */
+.hero-title,
+.hero-title *,
+.hero h1,
+.hero h1 *,
+.hero-content h1,
+.hero-content h1 * {
+  color: #111827 !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #111827 !important;
+  background: none !important;
+  background-image: none !important;
+  -webkit-background-clip: initial !important;
+  background-clip: initial !important;
+  text-shadow: none !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  font-weight: 900 !important;
 }

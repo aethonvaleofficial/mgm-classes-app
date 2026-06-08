@@ -1,10 +1,12 @@
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
+  /* Typography colors updated for improved readability */
+  --text: #374151; /* body text */
+  --text-h: #111827; /* headings */
+  --muted: #6b7280; /* muted/support text */
+  --bg: #fffaf0; /* warm cream background */
+  --border: rgba(17,24,39,0.08);
   --code-bg: #f4f3ec;
-  --accent: #aa3bff;
+  --accent: #7c3aed;
   --accent-bg: rgba(170, 59, 255, 0.1);
   --accent-border: rgba(170, 59, 255, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
@@ -52,7 +54,7 @@
 
 body {
   margin: 0;
-  background-color: #eef1f4;
+  background-color: var(--bg);
 }
 
 #root {
@@ -159,6 +161,8 @@ main {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   padding-bottom: 70px;
+  position: relative;
+  z-index: 10; /* ensure content sits above decorative journey layers */
 }
 
 main > section {
@@ -166,4 +170,32 @@ main > section {
   width: 100%;
   padding: 2rem 1.25rem;
   border-bottom: 1px solid var(--border);
+}
+
+/* Global button styles to ensure consistent contrast */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: #6931c8;
+}
+.btn-secondary {
+  background: var(--bg);
+  color: var(--text-h);
+  border: 1px solid var(--border);
+}
+.btn-secondary:hover {
+  background: var(--accent);
+  color: #fff;
 }
