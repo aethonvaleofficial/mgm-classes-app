@@ -122,3 +122,51 @@
     border-radius: 16px;
   }
 }
+/* FINAL ADMISSION FORM READABILITY FIX */
+.admission-form,
+.admission-form * {
+  opacity: 1 !important;
+}
+
+.admission-form h2,
+.admission-form h3,
+.admission-form-title,
+.admission-title {
+  color: #111827 !important;
+  -webkit-text-fill-color: #111827 !important;
+  font-weight: 900 !important;
+  opacity: 1 !important;
+}
+
+.admission-form p,
+.admission-form-subtitle,
+.form-subtitle {
+  color: #374151 !important;
+  -webkit-text-fill-color: #374151 !important;
+  opacity: 1 !important;
+}
+
+.admission-form label,
+.form-group label {
+  color: #1f2937 !important;
+  -webkit-text-fill-color: #1f2937 !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+}
+
+.admission-form input,
+.admission-form select,
+.admission-form textarea {
+  color: #111827 !important;
+  -webkit-text-fill-color: #111827 !important;
+  background: #ffffff !important;
+  border: 1.5px solid rgba(17, 24, 39, 0.22) !important;
+  opacity: 1 !important;
+}
+
+.admission-form input::placeholder,
+.admission-form textarea::placeholder,
+.admission-form select {
+  color: #6b7280 !important;
+  opacity: 1 !important;
+}
