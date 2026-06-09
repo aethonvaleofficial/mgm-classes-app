@@ -23,21 +23,39 @@
   color: var(--text);
   font-size: 0.7rem;
   font-weight: 500;
-  padding: 4px 0;
+  padding: 6px 8px;
   cursor: pointer;
-  transition: color 0.2s, transform 0.2s;
+  transition: color 0.2s, background-color 0.2s, transform 0.15s;
   -webkit-tap-highlight-color: transparent;
+  position: relative;
+  min-height: 60px;
+}
+
+.mobile-bottom-nav .nav-item:active {
+  background-color: var(--accent-bg);
 }
 
 .mobile-bottom-nav .nav-item .nav-icon {
   font-size: 1.3rem;
   margin-bottom: 2px;
+  display: block;
 }
 
 .mobile-bottom-nav .nav-item.active {
   color: var(--accent);
 }
 
+.mobile-bottom-nav .nav-item.active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 0 0 2px 2px;
+}
+
 .mobile-bottom-nav .nav-item.active .nav-icon {
-  transform: translateY(-2px);
+  transform: scale(1.1);
 }
