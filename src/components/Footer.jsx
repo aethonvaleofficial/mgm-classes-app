@@ -6,9 +6,10 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-content">
-          <p className="footer-text">
-            Website crafted by VORTEX · Engineered by AETHON
-          </p>
+          <div className="footer-credit">
+            <span className="footer-credit-line">A VORTEX Agency Project</span>
+            <span className="footer-credit-line">Engineered by AETHON VALE</span>
+          </div>
         </div>
       </div>
     </footer>

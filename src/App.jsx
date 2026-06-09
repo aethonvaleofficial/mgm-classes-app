@@ -71,8 +71,8 @@ function App() {
         <section id="contact">
           <Contact />
         </section>
+        <Footer />
       </main>
-      <Footer />
       <MobileBottomNav activeSection={activeSection} setActiveSection={setActiveSection} />
     </div>
   )
